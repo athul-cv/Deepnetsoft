@@ -11,7 +11,14 @@ const port = 5000;
 
 app.use(express.json());
 app.use(bodyparser.json());
-app.use(cors())
+const corsOptions = {
+    origin: 'https://deepnetsoft-henna.vercel.app',  // Allow the frontend domain
+    methods: 'GET,POST,PUT,DELETE',  // Specify allowed methods
+    allowedHeaders: 'Content-Type',  // Specify allowed headers if needed
+  };
+  
+  app.use(cors(corsOptions));  // Apply this CORS configuration
+  
 
 app.listen(port, () => {
     try {
