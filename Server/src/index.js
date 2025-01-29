@@ -66,7 +66,7 @@ app.post("/Menu",async(req,res)=>{
        }
 })
 
-app.get("/menuget",async(req,res)=>{
+app.get("/Menuget",async(req,res)=>{
     try{
         const Menuget = await Menu.find();
         if(Menuget.length==0){
@@ -120,7 +120,7 @@ app.post("/Food",async(req,res)=>{
        }
 })
 
-app.get("/foodget",async(req,res)=>{
+app.get("/Foodget",async(req,res)=>{
     try{
         const foodget = await Food.find();
         if(foodget.length==0){
