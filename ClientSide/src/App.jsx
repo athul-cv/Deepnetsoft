@@ -22,7 +22,7 @@ const HomePage = () => {
 
     const fetchdata = async () => {
       try {
-        await axios.get("https://deepnetsoft-api.vercel.app/menuget").then((response) => {
+        await axios.get("http://localhost:5000/menuget").then((response) => {
           console.log(response.data);
           if (response && response.status == 200 && response.data) {
             setMenulist(response.data)
@@ -42,7 +42,7 @@ const HomePage = () => {
 
     const fetchfooditems = async () => {
       try {
-        await axios.get("https://deepnetsoft-api.vercel.app/foodget").then((response) => {
+        await axios.get("http://localhost:5000/foodget").then((response) => {
           console.log(response.data);
           if (response && response.status == 200 && response.data) {
             setFooditems(response.data)

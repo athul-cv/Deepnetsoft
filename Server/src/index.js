@@ -25,11 +25,11 @@ app.listen(port, () => {
     }
 })
 
-app.get("/", (req,res)=>{
-    res.send({
-        message:"hello"
-    })
-})
+// app.get("/", (req,res)=>{
+//     res.send({
+//         message:"hello"
+//     })
+// })
 
 const Menuschemastructure = new mongoose.Schema(
     {
