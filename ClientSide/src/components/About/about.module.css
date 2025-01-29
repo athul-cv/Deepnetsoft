@@ -1,0 +1,206 @@
+.wrapper {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 60px 40px 60px;
+    position: relative;
+  }
+  
+  .about {
+    width: 340px;
+    height: 134px;
+    border-radius: 15px 0px 0px 0px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+  }
+  
+  .headName {
+    color: rgba(7, 150, 239, 1);
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.71px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .headName:hover {
+    border-bottom: 1.4px solid rgba(7, 150, 239, 1);
+  }
+  
+  .icon {
+    color: rgb(240, 175, 126);
+  
+  }
+  
+  .phoneAndMail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .aboutcontent {
+    color: rgba(206, 204, 204, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+  }
+  
+  .aboutcontent:hover {
+    border: 1.4px solid rgba(7, 150, 239, 1);
+  }
+  
+  
+  .webName {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 51.87px;
+    letter-spacing: 0.03em;
+    display: flex;
+    gap: 3px;
+    color: #fff;
+  }
+  
+  .webName:hover {
+    border-bottom: 1.4px solid rgba(7, 150, 239, 1);
+  }
+  
+  .deep {
+    color: rgba(7, 150, 239, 1);
+  }
+  
+  .soft {
+    color: rgb(168, 166, 166);
+  }
+  
+  .logo {
+    img {
+      width: 86px;
+      height: 76px;
+      top: -39px;
+      position: absolute;
+      left: 35%;
+    }
+  }
+  
+  .icons_s {
+    color: rgb(168, 166, 166);
+    font-size: 10px;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .icons_s:hover {
+    border: 1.4px solid rgba(7, 150, 239, 1);
+  
+  }
+  
+  .activeInMob {
+    display: none;
+  }
+  
+  .footer {
+    color: rgba(133, 120, 120, 1);
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .section {
+    display: flex;
+    gap: 30px;
+  }
+  
+  @media (max-width: 576px) {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 40px 60px 40px 60px;
+    }
+  
+    .logo {
+      img {
+        width: 75px;
+        height: 65px;
+        top: -34px;
+        position: absolute;
+        left: 35%;
+      }
+    }
+  
+    .activeInMob {
+      display: block;
+      width: 250px;
+      height: 110px;
+      border-radius: 15px 0px 0px 0px;
+      border: 1px solid rgba(255, 255, 255, 1);
+      border-radius: 15px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      gap: 10px;
+    }
+  
+    .hideInMob {
+      display: none;
+    }
+  
+    .about {
+      width: 250px;
+      height: 110px;
+    }
+  
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 11px;
+    }
+  
+    .section {
+      gap: 5px;
+    }
+  }
+  
+  @media (min-width: 425px) and (max-width: 858px) {
+    .about {
+      width: 250px;
+      height: 110px;
+    }
+  
+    .logo {
+      img {
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        position: absolute;
+        left: 39%;
+      }
+    }
+  
+    .webName {
+      font-size: 25px;
+    }
+  }

@@ -1,0 +1,101 @@
+.menu_item {
+    min-width: 35%;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.menu_header {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.name {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38.53px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.dots {
+    flex-grow: 1;
+    border-bottom: 3px dotted #ffffff;
+    margin: 0 10px;
+}
+
+.price {
+    white-space: nowrap;
+}
+
+.description {
+    font-family: Kelly Slab;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+@media (max-width: 576px) {
+
+    .menu_item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu_header {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .dots {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 571px) and (max-width: 769px) {
+    .menu_item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu_header {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .dots {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
