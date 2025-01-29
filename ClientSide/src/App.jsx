@@ -22,7 +22,7 @@ const HomePage = () => {
 
     const fetchdata = async () => {
       try {
-        await axios.get("https://deepnetsoft-qapi-api.vercel.app/menuget").then((response) => {
+        await axios.get("https://deepnetsoft-jr1q.vercel.app/Menuget").then((response) => {
           console.log(response.data);
           if (response && response.status == 200 && response.data) {
             setMenulist(response.data)
@@ -42,7 +42,7 @@ const HomePage = () => {
 
     const fetchfooditems = async () => {
       try {
-        await axios.get("https://deepnetsoft-qapi-api.vercel.app/foodget").then((response) => {
+        await axios.get("https://deepnetsoft-jr1q.vercel.app/Foodget").then((response) => {
           console.log(response.data);
           if (response && response.status == 200 && response.data) {
             setFooditems(response.data)
